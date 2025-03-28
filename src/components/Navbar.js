@@ -1,19 +1,44 @@
-import { Component } from "react";
+import React from "react";
 import "./NavbarStyles.css";
-import { MenuItems } from "./MenuItems";
-import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faHome,
+  faInfoCircle,
+  faConciergeBell,
+  faEnvelope,
+} from "@fortawesome/free-solid-svg-icons";
 
-class Navbar extends Component {
-  // Set state
-  // Make Handleclick Function
-
-  render() {
-    return (
-      <nav className="NavbarItems">
-        <h1>Your Code Here</h1>
+const Navbar = () => {
+  return (
+    <div className="navbar-wrapper">
+      <nav className="navbar">
+        <div className="navbar-logo">Ar Rahman Tours</div>
+        <ul className="navbar-links">
+          <li>
+            <a href="#home">
+              <FontAwesomeIcon icon={faHome} /> Home
+            </a>
+          </li>
+          <li>
+            <a href="#about">
+              <FontAwesomeIcon icon={faInfoCircle} /> About
+            </a>
+          </li>
+          <li>
+            <a href="#service">
+              <FontAwesomeIcon icon={faConciergeBell} /> Service
+            </a>
+          </li>
+          <li>
+            <a href="#contact">
+              <FontAwesomeIcon icon={faEnvelope} /> Contact
+            </a>
+          </li>
+        </ul>
+        <button className="navbar-button">Sign Up</button>
       </nav>
-    );
-  }
-}
+    </div>
+  );
+};
 
 export default Navbar;

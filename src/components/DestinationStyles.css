@@ -1,1 +1,62 @@
-/* Style your components */
+.destination {
+    margin: 80px auto;
+    padding: 0 40px;
+    max-width: 1200px;
+    text-align: center;
+  }
+  
+  .destination h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .destination p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 40px;
+  }
+  
+  .first-desc,
+  .first-desc-reverse {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    margin-bottom: 80px;
+    flex-wrap: wrap;
+  }
+  
+  .first-desc-reverse {
+    flex-direction: row-reverse;
+  }
+  
+  .desc-text {
+    flex: 1;
+    text-align: left;
+  }
+  
+  .desc-text h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .desc-text p {
+    font-size: 1rem;
+    color: #444;
+    line-height: 1.6;
+  }
+  
+  .desc-img {
+    display: flex;
+    gap: 20px;
+    flex: 1;
+    justify-content: center;
+  }
+  
+  .desc-img img {
+    width: 100%;
+    max-width: 250px;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  }
+  

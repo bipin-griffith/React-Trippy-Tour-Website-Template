@@ -1,0 +1,44 @@
+.travel-plans {
+    padding: 60px 40px;
+    background-color: #f9f9f9;
+    text-align: center;
+    font-family: sans-serif;
+  }
+  
+  .travel-plans h1 {
+    color: red;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+  }
+  
+  .plans-table {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    overflow-x: auto;
+  }
+  
+  .plans-header,
+  .plans-row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .plan-column {
+    flex: 1 1 200px;
+    max-width: 250px;
+    padding: 16px;
+    border: 1px solid #ccc;
+    background-color: white;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  
+  .highlight {
+    background-color: yellow;
+    color: red;
+    font-weight: bold;
+  }
+  

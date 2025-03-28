@@ -6,9 +6,5 @@ import Service from "./routes/Service";
 import Contact from "./routes/Contact";
 
 export default function App() {
-  return (
-    <div className="App">
-      <h1>Your Code Here</h1>
-    </div>
-  );
+  return <Home />;
 }
